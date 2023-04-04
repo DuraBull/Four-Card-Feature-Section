@@ -1,0 +1,44 @@
+.grid
+    display: grid
+    gap: 2em
+    grid-template-columns: repeat(3, 1fr)
+
+.card
+    position: relative
+    display: flex
+    flex-direction: column
+    padding: 2em
+    border-radius: 6px
+    max-width: 350px
+    height: 250px
+    box-shadow: 0 10px 20px 1px $grayish-blue
+    h2
+        font-size: 20px
+    p
+        font-size: 13px
+        font-weight: $font-light
+        margin-top: 1em
+    img
+        aspect-ratio: 1/1
+        width: 60px
+        position: absolute
+        bottom: 2em
+        right: 2em
+    
+.supervisor
+    grid-column: 1
+    grid-row: 1 / span 2
+    align-self: center
+    border-top: 4px solid $cyan
+.team
+    grid-column: 2
+    border-top: 4px solid $red
+.karma
+    grid-column: 2
+    border-top: 4px solid $orange
+.calculator
+    grid-column: 3
+    grid-row: 1 / span 2
+    align-self: center
+    border-top: 4px solid $blue
+
